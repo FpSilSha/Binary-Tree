@@ -11,7 +11,14 @@ namespace BinaryTree
 
         Node root = null;
 
+        public Action AddNode(int newNumberId)
+        {
+            Node temp = new Node();
+            temp.id = newNumberId;
 
+
+            
+        }
 
 
     }

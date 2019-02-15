@@ -8,7 +8,8 @@ namespace BinaryTree
 {
     public class Node
     {
-       
-
+        public int id;
+        public Node right;
+        public Node left;
     }
 }
