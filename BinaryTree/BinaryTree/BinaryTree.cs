@@ -8,5 +8,11 @@ namespace BinaryTree
 {
     class BinaryTree
     {
+
+        Node root = null;
+
+
+
+
     }
 }

@@ -10,7 +10,8 @@ namespace BinaryTree
     {
         static void Main(string[] args)
         {
-          
+            BinaryTree binaryTree = new BinaryTree();
+
             
 
 

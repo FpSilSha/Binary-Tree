@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BinaryTree
 {
-    class Node
+    public class Node
     {
-
+       
 
     }
 }
