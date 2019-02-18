@@ -11,9 +11,10 @@ namespace BinaryTree
 
         Node root = null;
 
-        public void AddNode(int newNumberId)
+        public bool AddNode(int newNumberId)
         {
             Node temp = new Node(newNumberId);
+            bool nodeAlreadyExist = false;
             if(root == null)
             {
                 root = temp;
@@ -53,8 +54,14 @@ namespace BinaryTree
 
                         }
                     }
+                    else
+                    {
+                        nodeAlreadyExist = true;
+                    }
                 }
             }
+
+            return nodeAlreadyExist;
         }
 
         public void Search(Node node)
