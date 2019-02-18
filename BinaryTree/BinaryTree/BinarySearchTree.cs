@@ -64,10 +64,64 @@ namespace BinaryTree
             return nodeAlreadyExist;
         }
 
-        public void Search(Node node)
+        public Node Search(int numberId)
         {
+            Node temp = new Node(numberId);
+            Node start = root;
+            bool nodeDoesNotExist = false;
+            
+            bool nextRound = true;
+            while (nextRound)
+            {
+                if (temp.id > start.id)
+                {
+                    if (start.right == null)
+                    {
+                        nextRound = false;
+                        nodeDoesNotExist = true;
 
+                    }
+                    else
+                    {
+                        start = start.right;
 
+                    }
+                }
+                else if (temp.id < start.id)
+                {
+
+                    if (start.left == null)
+                    {
+                        nextRound = false;
+                        nodeDoesNotExist = true;
+
+                    }
+                    else
+                    {
+                        start = start.left;
+
+                    }
+                }
+                else if (temp.id == start.id) 
+                {
+                    nextRound = false;
+                }
+                else
+                {
+                    nextRound = false;
+                    nodeDoesNotExist = true;
+                }
+            }
+            if(temp.id == start.id)
+            {
+                return start;
+            }
+            else
+            {
+                return temp;
+            }
         }
+
     }
+    
 }
