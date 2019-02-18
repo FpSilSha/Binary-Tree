@@ -27,11 +27,24 @@ namespace BinaryTree
                 {
                     if(start.right == null)
                     {
-                        start.right.id = temp.id;
+                        start.right = temp;
                     }
                     else
                     {
-                        start.id = start.right.id;
+                        start = start.right;
+
+                    }
+                }
+                else if (temp.id < start.id)
+                {
+
+                    if (start.left == null)
+                    {
+                        start.left = temp;
+                    }
+                    else
+                    {
+                        start = start.left;
 
                     }
                 }
