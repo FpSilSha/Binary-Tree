@@ -15,6 +15,11 @@ namespace BinaryTree
             binaryTree.AddNode(100);
             binaryTree.AddNode(90);
             binaryTree.AddNode(101);
+            binaryTree.AddNode(105);
+            binaryTree.AddNode(75);
+            binaryTree.AddNode(10);
+            binaryTree.AddNode(35);
+            binaryTree.AddNode(104);
 
 
         }

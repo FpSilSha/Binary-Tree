@@ -21,30 +21,37 @@ namespace BinaryTree
             }
             else
             {
+                
                 Node start = root;
-                if(temp.id > start.id)
+                bool nextRound = true;
+                while (nextRound)
                 {
-                    if(start.right == null)
+                    if (temp.id > start.id)
                     {
-                        start.right = temp;
-                    }
-                    else
-                    {
-                        start = start.right;
+                        if (start.right == null)
+                        {
+                            start.right = temp;
+                            nextRound = false;
+                        }
+                        else
+                        {
+                            start = start.right;
 
+                        }
                     }
-                }
-                else if (temp.id < start.id)
-                {
-
-                    if (start.left == null)
+                    else if (temp.id < start.id)
                     {
-                        start.left = temp;
-                    }
-                    else
-                    {
-                        start = start.left;
 
+                        if (start.left == null)
+                        {
+                            start.left = temp;
+                            nextRound = false;
+                        }
+                        else
+                        {
+                            start = start.left;
+
+                        }
                     }
                 }
             }
