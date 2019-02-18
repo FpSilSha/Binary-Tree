@@ -13,8 +13,7 @@ namespace BinaryTree
 
         public void AddNode(int newNumberId)
         {
-            Node temp = new Node();
-            temp.id = newNumberId;
+            Node temp = new Node(newNumberId);
             if(root == null)
             {
                 root = temp;

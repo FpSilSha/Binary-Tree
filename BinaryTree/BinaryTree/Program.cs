@@ -13,7 +13,8 @@ namespace BinaryTree
             BinarySearchTree binaryTree = new BinarySearchTree();
 
             binaryTree.AddNode(100);
-            
+            binaryTree.AddNode(90);
+            binaryTree.AddNode(101);
 
 
         }

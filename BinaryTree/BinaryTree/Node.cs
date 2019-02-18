@@ -11,5 +11,9 @@ namespace BinaryTree
         public int id;
         public Node right;
         public Node left;
+        public Node (int id)
+        {
+            this.id = id;
+        }
     }
 }
