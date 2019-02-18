@@ -29,7 +29,11 @@ namespace BinaryTree
                     {
                         start.right.id = temp.id;
                     }
-                   
+                    else
+                    {
+                        start.id = start.right.id;
+
+                    }
                 }
             }
         }
