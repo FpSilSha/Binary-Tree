@@ -9,6 +9,7 @@ namespace BinaryTree
     public class Node
     {
         public int id;
+        public bool doesNotExist = false;
         public Node right;
         public Node left;
         public Node (int id)

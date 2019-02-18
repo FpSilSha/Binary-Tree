@@ -68,7 +68,7 @@ namespace BinaryTree
         {
             Node temp = new Node(numberId);
             Node start = root;
-            bool nodeDoesNotExist = false;
+            
             
             bool nextRound = true;
             while (nextRound)
@@ -78,7 +78,7 @@ namespace BinaryTree
                     if (start.right == null)
                     {
                         nextRound = false;
-                        nodeDoesNotExist = true;
+                        temp.doesNotExist = true;
 
                     }
                     else
@@ -93,7 +93,7 @@ namespace BinaryTree
                     if (start.left == null)
                     {
                         nextRound = false;
-                        nodeDoesNotExist = true;
+                        temp.doesNotExist = true;
 
                     }
                     else
@@ -109,7 +109,7 @@ namespace BinaryTree
                 else
                 {
                     nextRound = false;
-                    nodeDoesNotExist = true;
+                    temp.doesNotExist = true;
                 }
             }
             if(temp.id == start.id)

@@ -21,7 +21,11 @@ namespace BinaryTree
             binaryTree.AddNode(35);
             binaryTree.AddNode(104);
 
-
+            
+            binaryTree.Search(75);
+            binaryTree.Search(35);
+           Node capture1 = binaryTree.Search(104);
+           Node capture2 = binaryTree.Search(32);
         }
     }
 }
