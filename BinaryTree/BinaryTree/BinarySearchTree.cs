@@ -6,20 +6,30 @@ using System.Threading.Tasks;
 
 namespace BinaryTree
 {
-    class BinaryTree
+    class BinarySearchTree
     {
 
         Node root = null;
 
-        public Action AddNode(int newNumberId)
+        public void AddNode(int newNumberId)
         {
             Node temp = new Node();
             temp.id = newNumberId;
+            if(root == null)
+            {
+                root = temp;
 
+            }
+            else
+            {
 
-            
+            }
         }
 
+        public void Search(Node node)
+        {
 
+
+        }
     }
 }

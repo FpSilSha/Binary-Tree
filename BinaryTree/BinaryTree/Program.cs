@@ -10,8 +10,9 @@ namespace BinaryTree
     {
         static void Main(string[] args)
         {
-            BinaryTree binaryTree = new BinaryTree();
+            BinarySearchTree binaryTree = new BinarySearchTree();
 
+            binaryTree.AddNode(100);
             
 
 
