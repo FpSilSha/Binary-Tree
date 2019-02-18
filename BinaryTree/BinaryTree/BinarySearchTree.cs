@@ -22,7 +22,15 @@ namespace BinaryTree
             }
             else
             {
-
+                Node start = root;
+                if(temp.id > start.id)
+                {
+                    if(start.right == null)
+                    {
+                        start.right.id = temp.id;
+                    }
+                   
+                }
             }
         }
 
